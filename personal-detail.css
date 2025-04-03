@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    /* background-image: url("/background2.png"); */
+    background-image: url("/background2.png");
     background-color: #cdcdcd;
-    /* background-size:cover;
+    background-size:cover;
     background-position: center; 
     background-repeat: no-repeat; 
-    background-attachment: fixed; */
+    background-attachment: fixed;
   }
 
 .col{
