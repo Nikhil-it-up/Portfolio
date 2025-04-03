@@ -6,13 +6,11 @@
 body{
     background-color: #cdcdcd;
     background-image: url("/background2.png");
-
-    background-size:cover;
-    background-position: center; 
-    /* background-repeat: no-repeat;  */
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed; 
-    
 }
+
 header{
     display: flex;
     align-items: start;
@@ -27,11 +25,12 @@ header{
     margin-left: 20px;
     font-size: 20px;
 }
+
 .col h2{
     text-shadow: rgb(65, 62, 62) 1px 3px 10px;
 }
+
 .name{
-  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,47 +39,116 @@ header{
     font-size: 30px;
     text-align: center;
     font-family: Georgia;
-    height:50px;
+    height: 50px;
 }
-
 
 .name img{
     height: 50px;
     width: 50px;
-    margin-left:8px;
-    border:2px solid black;
-    border-width: 1px;
-    /* outline: none; */
+    margin-left: 8px;
+    border: 2px solid black;
     border-radius: 50px;
 }
+
 .name img:hover{
     height: 75px;
     width: 75px;
-    transition-timing-function:ease-in-out;
-    transition-duration: 0.35s;
-    transition-delay: 0.1s;
+    transition: all 0.35s ease-in-out;
 }
 
 .wel{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 500px;
+    text-align: center;
+    height: auto;
+    width: 100%;
     margin-top: 70px;
-    margin-left:450px;
-    background-color:transparent;
+    background-color: transparent;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    
-
 }
+
 .wel h1{
     text-shadow: rgb(65, 62, 62) 1px 3px 10px;
 }
+
 .wel h1:hover{
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.32s;
-    transition-delay: 0.1s;
+    transition: all 0.32s ease-in-out;
     font-size: 80px;
+}
+
+.Next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.Next button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: lightgreen;
+}
+
+.Next button:hover{
+    height: 52px;
+    width: 200px;
+    transition: all 0.32s ease-in-out;
+    font-size: 25px;
+    background-color: rgb(54, 230, 54);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .name {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .name img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .wel {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+
+    .wel h1:hover {
+        font-size: 40px;
+    }
+
+    .Next button {
+        height: 45px;
+        width: 120px;
+        font-size: 18px;
+    }
+
+    .Next button:hover {
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+    }
 }
